@@ -855,7 +855,7 @@ clean_elive_dir(){
     el_debug
      local ui_user_answered
 
-     ui_user_answered="$( $guitool --list --width=640 --height=300 --text="$( eval_gettext "Select this option to remove your translations directory or to revert to a previous commit (Important: If you erroneously have sent a wrong translation, you have to select this option)" )" --column="$( eval_gettext "Option" )" --column="$( eval_gettext "Description" )" "Purge" "$( eval_gettext "This option removes the entire directory with your translations." )" "Account" "$( eval_gettext "Resets your username and password configurations" )" "Revert" "$( eval_gettext "This option lets you undo a wrong translation, which you sent by mistake." )" || echo cancel )"
+     ui_user_answered="$( $guitool --list --width=640 --height=300 --text="$( eval_gettext "Select this option to remove your translations directory or to revert to a previous commit (Important: If you erroneously have sent a wrong translation, you have to select this option)" )" --column="$( eval_gettext "Option" )" --column="$( eval_gettext "Description" )" "Purge" "$( eval_gettext "This option removes the entire directory with your translations." )" "Account" "$( eval_gettext "Resets your username and password configurations" )" "Revert" "$( eval_gettext "This option lets you undo a wrong translation, which you sent by mistake." )" "Submit changes" "$( eval_gettext "If you chose not to submit your translations earlier and you want to submit them now, select this option." )" "Revert" "$( eval_gettext "This option lets you undo a wrong translation, which you sent by mistake." )" || echo cancel )"
     ui_answer_check
 
     case "$ui_user_answered" in
