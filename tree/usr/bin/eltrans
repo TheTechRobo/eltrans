@@ -1126,7 +1126,7 @@ translate_new(){
 
         echo -e "Cleanups" >> "${tempfile}_order_8_"
         echo -e "-" >> "${tempfile}_order_8_"
-        echo -e "$( eval_gettext "Purge, undo or remove" )" >> "${tempfile}_order_8_"
+        echo -e "$( eval_gettext "Purge, undo, commit or remove" )" >> "${tempfile}_order_8_"
         echo -e "$( eval_gettext "Management of your conflicting translations." )" >> "${tempfile}_order_8_"
 
 
